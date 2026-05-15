@@ -1,3 +1,7 @@
+TL;DR
+Two servos aim a TF-Mini S LiDAR around a room. Arduino reads distance, converts spherical → Cartesian, and ships (x, y, z) over USB. 
+A Python script catches the stream and draws the point cloud in Open3D.
+
 3D LiDAR Scanner
 
 A DIY spherical-coordinate LiDAR scanner built with an Arduino, two servos, and a TF-Mini S sensor. The device sweeps through θ (theta) and φ (phi) angles, measures distance at each point, converts the readings to 3D Cartesian coordinates, and streams them over serial to a Python host program. The host renders the resulting point cloud in real time using Open3D.
